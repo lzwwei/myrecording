@@ -1,0 +1,328 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<form method="get" action="test%20namespace.php">-->
+<!--    <input type="text" name="fname">-->
+<!--    <input type="submit" value="提交">-->
+<!--</form>-->
+<!--<form action="test%20namespace.php" method="post">-->
+<!--    <input type="text" name="password">-->
+<!--    <input type="submit" value="提交密码">-->
+<!--</form>-->
+<!--<form action="test%20namespace.php" method="get">-->
+<!--    <select name="q">-->
+<!--        <option value="">选择一个站点：</option>-->
+<!--        <option value="RUNOOB">RUNOOB</option>-->
+<!--        <option value="GOOGLE">google</option>-->
+<!--        <option value="tengxun">TENGXUN</option>-->
+<!--    </select>-->
+<!--    <input type="submit" value="提交">-->
+<!--</form>-->
+
+<!--<form action="test%20namespace.php" method="post">-->
+<!--    <select multiple="multiple" name="qq[]">-->
+<!--        <option value="180">180</option>-->
+<!--        <option value="170">170</option>-->
+<!--        <option value="160">160</option>-->
+<!--    </select>-->
+<!--    <input type="submit" value="提交多选">-->
+<!--</form>-->
+
+
+<!--<form action="test%20namespace.php" method="get">-->
+<!--    <input type="radio" name="qqq" value="RUNOOB">RUNOOB-->
+<!--    <input type="radio" name="qqq" value="GOOGLE">GOOGLE-->
+<!--    <input type="radio" name="qqq" value="TAOBAO">TAOBAO-->
+<!--    <input type="submit" value="提交单选按钮">-->
+<!--</form>-->
+
+
+
+<!--<form method="post" action="test%20namespace.php">-->
+<!--    <input type="checkbox" name="qqqq[]" value="RUNOOB">RUNOOB-->
+<!--    <input type="checkbox" name="qqqq[]" value="GOOGLE">GOOGLE-->
+<!--    <input type="checkbox" name="qqqq[]" value="TAOBAO">TAOBAO-->
+<!--    <input type="submit" value="提交复选框">-->
+<!--</form>-->
+
+<!--<form method="post" action="test%20namespace.php">-->
+<!--    姓名:<input type="text" name="name">-->
+<!--    <span class="error">*<?php echo $nameErr; ?></span>-->
+<!--    性别:<select name="xingbie">-->
+<!--            <option value="">请选择性别：</option>-->
+<!--            <option value="boy">男</option>-->
+<!--            <option value="girl">女</option>-->
+<!--        </select>-->
+<!--    E-mail:<input type="text" name="email">-->
+<!--    web:<input type="text" name="url">-->
+<!--    <br>-->
+<!--    备注:<textarea name="comment" rows="5" cols="40"></textarea>-->
+<!--    <input type="submit" value="提交表单">-->
+<!--</form>-->
+
+
+
+<!--<form method="post" action="test%20namespace.php" >-->
+<!--    名字:<input type="text" name="name" >-->
+<!--    <span class="error">*<?php echo $nameErr;?></span>-->
+<!--    E-mail:<input type="text" name="email" >-->
+<!--    <span class="error">*<?php echo $emailErr;?></span>-->
+<!--    网址:<input type="text" name="weburl" >-->
+<!--    <span class="error">*<?php echo $weburlErr;?></span>-->
+<!--    备注:<textarea rows="5" cols="50" name="comment"></textarea>-->
+<!--    性别:<input type="radio" name="xingbie" value="male">男-->
+<!--        <input type="radio" name="xingbie" value="female">女-->
+<!--    <input type="submit" value="提交">-->
+<!--</form>-->
+
+
+<!--<form method="post" action="newtest.php">-->
+<!--    <label for="file">文件名：</label>-->
+<!--    <input type="file" name="file" id="file"><br>-->
+<!--    <input type="submit" name="submit" value="提交">-->
+<!--</form>-->
+<!--</body>-->
+<!--</html>-->
+
+
+
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+<!--    <meta charset="utf-8">-->
+<!--    <title>菜鸟教程(runoob.com)</title>-->
+<!--    <script>-->
+<!--        function showSite(str)-->
+<!--        {-->
+<!--            if (str=="")-->
+<!--            {-->
+<!--                document.getElementById("txtHint").innerHTML="";-->
+<!--                return;-->
+<!--            }-->
+<!--            if (window.XMLHttpRequest)-->
+<!--            {-->
+<!--                // IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码-->
+<!--                xmlhttp=new XMLHttpRequest();-->
+<!--            }-->
+<!--            else-->
+<!--            {-->
+<!--                // IE6, IE5 浏览器执行代码-->
+<!--                xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");-->
+<!--            }-->
+<!--            xmlhttp.onreadystatechange=function()-->
+<!--            {-->
+<!--                if (xmlhttp.readyState==4 && xmlhttp.status==200)-->
+<!--                {-->
+<!--                    document.getElementById("txtHint").innerHTML=xmlhttp.responseText;-->
+<!--                }-->
+<!--            }-->
+<!--            xmlhttp.open("GET","test3.php?q="+str,true);-->
+<!--            xmlhttp.send();-->
+<!--        }-->
+<!--    </script>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--<form>-->
+<!--    <select name="users" onchange="showSite(this.value)">-->
+<!--        <option value="">选择一个网站:</option>-->
+<!--        <option value="1">Google</option>-->
+<!--        <option value="2">淘宝</option>-->
+<!--        <option value="3">菜鸟教程</option>-->
+<!--        <option value="4">微博</option>-->
+<!--        <option value="5">Facebook</option>-->
+<!--    </select>-->
+<!--</form>-->
+<!--<br>-->
+<!--<div id="txtHint"><b>网站信息显示在这里……</b></div>-->
+
+<!--</body>-->
+<!--</html>-->
+
+
+
+<!--<html>-->
+<!--<head>-->
+<!--    <script>-->
+<!--        function showCD(str)-->
+<!--        {-->
+<!--            if (str=="")-->
+<!--            {-->
+<!--                document.getElementById("txtHint").innerHTML="";-->
+<!--                return;-->
+<!--            }-->
+<!--            if (window.XMLHttpRequest)-->
+<!--            {-->
+<!--                // IE7+, Firefox, Chrome, Opera, Safari 浏览器执行-->
+<!--                xmlhttp=new XMLHttpRequest();-->
+<!--            }-->
+<!--            else-->
+<!--            {-->
+<!--                // IE6, IE5 浏览器执行-->
+<!--                xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");-->
+<!--            }-->
+<!--            xmlhttp.onreadystatechange=function()-->
+<!--            {-->
+<!--                if (xmlhttp.readyState==4 && xmlhttp.status==200)-->
+<!--                {-->
+<!--                    document.getElementById("txtHint").innerHTML=xmlhttp.responseText;-->
+<!--                }-->
+<!--            }-->
+<!--            xmlhttp.open("GET","test3.php?q="+str,true);-->
+<!--            xmlhttp.send();-->
+<!--        }-->
+<!--    </script>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--<form>-->
+<!--    Select a CD:-->
+<!--    <select name="cds" onchange="showCD(this.value)">-->
+<!--        <option value="">Select a CD:</option>-->
+<!--        <option value="Bob Dylan">Bob Dylan</option>-->
+<!--        <option value="Bonnie Tyler">Bonnie Tyler</option>-->
+<!--        <option value="Dolly Parton">Dolly Parton</option>-->
+<!--    </select>-->
+<!--</form>-->
+<!--<div id="txtHint"><b>CD info will be listed here...</b></div>-->
+
+<!--</body>-->
+<!--</html>-->
+
+
+
+<!--<html>-->
+<!--<head>-->
+<!--    <script>-->
+<!--        function showResult(str)-->
+<!--        {-->
+<!--            if (str.length==0)-->
+<!--            {-->
+<!--                document.getElementById("livesearch").innerHTML="";-->
+<!--                document.getElementById("livesearch").style.border="0px";-->
+<!--                return;-->
+<!--            }-->
+<!--            if (window.XMLHttpRequest)-->
+<!--            {// IE7+, Firefox, Chrome, Opera, Safari 浏览器执行-->
+<!--                xmlhttp=new XMLHttpRequest();-->
+<!--            }-->
+<!--            else-->
+<!--            {// IE6, IE5 浏览器执行-->
+<!--                xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");-->
+<!--            }-->
+<!--            xmlhttp.onreadystatechange=function()-->
+<!--            {-->
+<!--                if (xmlhttp.readyState==4 && xmlhttp.status==200)-->
+<!--                {-->
+<!--                    document.getElementById("livesearch").innerHTML=xmlhttp.responseText;-->
+<!--                    document.getElementById("livesearch").style.border="1px solid #A5ACB2";-->
+<!--                }-->
+<!--            }-->
+<!--            xmlhttp.open("GET","test3.php?q="+str,true);-->
+<!--            xmlhttp.send();-->
+<!--        }-->
+<!--    </script>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--<form>-->
+<!--    <input type="text" size="30" onkeyup="showResult(this.value)">-->
+<!--    <div id="livesearch"></div>-->
+<!--</form>-->
+
+<!--</body>-->
+<!--</html>-->
+
+
+<!--<html>-->
+<!--<head>-->
+<!--    <meta charset="utf-8">-->
+<!--    <title>菜鸟教程(runoob.com)</title>-->
+<!--    <script>-->
+<!--        function showRSS(str)-->
+<!--        {-->
+<!--            if (str.length==0)-->
+<!--            {-->
+<!--                document.getElementById("rssOutput").innerHTML="";-->
+<!--                return;-->
+<!--            }-->
+<!--            if (window.XMLHttpRequest)-->
+<!--            {-->
+<!--                // IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码-->
+<!--                xmlhttp=new XMLHttpRequest();-->
+<!--            }-->
+<!--            else-->
+<!--            {-->
+<!--                // IE6, IE5 浏览器执行代码-->
+<!--                xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");-->
+<!--            }-->
+<!--            xmlhttp.onreadystatechange=function()-->
+<!--            {-->
+<!--                if (xmlhttp.readyState==4 && xmlhttp.status==200)-->
+<!--                {-->
+<!--                    document.getElementById("rssOutput").innerHTML=xmlhttp.responseText;-->
+<!--                }-->
+<!--            }-->
+<!--            xmlhttp.open("GET","test3.php?q="+str,true);-->
+<!--            xmlhttp.send();-->
+<!--        }-->
+<!--    </script>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--<form>-->
+<!--    <select onchange="showRSS(this.value)">-->
+<!--        <option value="">选择一个 RSS-feed:</option>-->
+<!--        <option value="rss">读取 RSS 数据</option>-->
+<!--    </select>-->
+<!--</form>-->
+<!--<br>-->
+<!--<div id="rssOutput">RSS-feed 数据列表...</div>-->
+<!--</body>-->
+<!--</html>-->
+
+
+
+<!--<html>-->
+<!--<head>-->
+<!--    <meta charset="utf-8">-->
+<!--    <title>菜鸟教程(runoob.com)</title>-->
+<!--    <script>-->
+<!--        function getVote(int) {-->
+<!--            if (window.XMLHttpRequest) {-->
+<!--                // IE7+, Firefox, Chrome, Opera, Safari 执行代码-->
+<!--                xmlhttp=new XMLHttpRequest();-->
+<!--            } else {-->
+<!--                // IE6, IE5 执行代码-->
+<!--                xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");-->
+<!--            }-->
+<!--            xmlhttp.onreadystatechange=function() {-->
+<!--                if (xmlhttp.readyState==4 && xmlhttp.status==200)-->
+<!--                {-->
+<!--                    document.getElementById("poll").innerHTML=xmlhttp.responseText;-->
+<!--                }-->
+<!--            }-->
+<!--            xmlhttp.open("GET","test3.php?vote="+int,true);-->
+<!--            xmlhttp.send();-->
+<!--        }-->
+<!--    </script>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--<div id="poll">-->
+<!--    <h3>你喜欢 PHP 和 AJAX 吗?</h3>-->
+<!--    <form>-->
+<!--        是:-->
+<!--        <input type="radio" name="vote" value="0" onclick="getVote(this.value)">-->
+<!--        <br>-->
+<!--        否:-->
+<!--        <input type="radio" name="vote" value="1" onclick="getVote(this.value)">-->
+<!--    </form>-->
+<!--</div>-->
+
+<!--</body>-->
+<!--</html>-->
